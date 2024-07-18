@@ -1,0 +1,129 @@
+:root {
+    --main-font-inter: "Inter", sans-serif;
+    --main-font-plus: "Plus Jakarta Sans", sans-serif;
+    ;
+}
+
+.page__content-info {
+    margin-top: 150px;
+}
+
+@media(max-width: 767.98px) {
+    .page__content-info {
+        margin-top: 70px;
+    }
+}
+
+.content-info__title {
+    background: rgba(18, 21, 24, 1);
+    padding: 67px 0;
+}
+
+.content-info__container-title {
+    font-size: 70px;
+    font-weight: 400;
+    line-height: 84.35px;
+    color: rgba(255, 214, 0, 1);
+    border-left: 2px solid rgba(255, 214, 0, 1);
+    padding-left: 30px;
+    position: relative;
+}
+
+.content-info__container-title.terms::after {
+    content: "TERMS OF USE";
+    position: absolute;
+    font-size: 180px;
+    font-weight: 400;
+    line-height: 216.9px;
+    text-align: left;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: rgba(255, 255, 255, 0.08);
+    text-transform: uppercase;
+    white-space: nowrap;
+    left: -121px;
+    top: -68px;
+
+}
+
+.content-info__container-title.privacy::after {
+    content: "PRIVACY POLICY";
+    position: absolute;
+    font-size: 180px;
+    font-weight: 400;
+    line-height: 216.9px;
+    text-align: left;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: rgba(255, 255, 255, 0.08);
+    text-transform: uppercase;
+    white-space: nowrap;
+    left: -121px;
+    top: -68px;
+}
+
+.content-info__container {
+    padding: 80px 0;
+}
+
+.terms-content__text:not(:last-child) {
+    margin-bottom: 32px;
+}
+
+.terms-content__text-title {
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 33.74px;
+    margin-bottom: 24px;
+}
+
+.terms-content__text-description {
+    font-family: var(--main-font-plus);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 32px;
+}
+
+.terms-content__text-description:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+@media(max-width: 1199.98px) {
+    .content-info__container-title {
+        font-size: 36px;
+        line-height: 43.38px;
+    }
+
+    .terms-content__text-title {
+        font-size: 22px;
+        line-height: 26.51px;
+    }
+
+    .terms-content__text-description {
+        font-size: 16px;
+        line-height: 28px;
+    }
+
+    .content-info__container-title.terms::after {
+        font-size: 96px;
+        font-weight: 400;
+        line-height: 115.68px;
+        left: -3px;
+        top: -37px;
+    }
+
+    .content-info__container-title.privacy::after {
+        font-size: 96px;
+        font-weight: 400;
+        line-height: 115.68px;
+        left: -3px;
+        top: -37px;
+    }
+
+}
+
+@media(max-width: 1199.98px) {
+    .content-info__container {
+        padding: 56px 0;
+    }
+}
